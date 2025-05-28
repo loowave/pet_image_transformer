@@ -1,6 +1,6 @@
 #pragma once
 
-#include <unordered_map>
+#include <map>
 #include <cstring>
 #include "RGB.h"
 #include "tmatrix.h"
@@ -72,6 +72,16 @@ protected:
 };
 
 // Функция, создающаяя map сопоставляющую названию фильтра, фукнцию, создающую его
+
+// сравнение ключей
+struct CompareStr {
+    bool operator()(char const* a, char const* b) const {
+        return std::strcmp(a, b) < 0;
+    }
+};
 using Ptr2FilterCreator = Filter* (*)(const FilterDescriptor&);
-using FilterCreatorsMap = std::unordered_map<const char*, Ptr2FilterCreator>;
+using FilterCreatorsMap = std::map<const char*, Ptr2FilterCreator, CompareStr>;
 FilterCreatorsMap InitProducers();
+
+// Функция для проверки присутствия в FiltercreatorsMap соответствующего ключа
+size_t KeyCount(const FilterCreatorsMap& map, const char* key);

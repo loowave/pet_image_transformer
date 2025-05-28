@@ -1,3 +1,21 @@
 # ninja log v5
-3	516	1748441038388463068	build.ninja	65e01191197754b4
+3	516	1748445086405752724	build.ninja	65e01191197754b4
 1964	2349	7017442532387006	untitled1.exe	4a33298c6260cc37
+2	498	1748445363424087040	CMakeFiles/untitled1.dir/files_processing.cpp.o	7422ca0000aa4890
+1	687	1748445363612088349	CMakeFiles/untitled1.dir/application.cpp.o	2614c9c4b39738ee
+2	726	1748445363648088599	CMakeFiles/untitled1.dir/pipeline.cpp.o	8c1fdeca42955629
+0	1145	1748445364072091550	CMakeFiles/untitled1.dir/main.cpp.o	5fb78e5cca10a3fb
+1	1522	1748445364448094164	CMakeFiles/untitled1.dir/filter.cpp.o	2c62ab2f02fde519
+1522	1746	1748445364672095721	untitled1	495eb8abd0d481dd
+3	759	1748445815238552363	CMakeFiles/untitled1.dir/pipeline.cpp.o	8c1fdeca42955629
+2	1281	1748445815758554616	CMakeFiles/untitled1.dir/filter.cpp.o	2c62ab2f02fde519
+2	471	1748445915186968536	CMakeFiles/untitled1.dir/files_processing.cpp.o	7422ca0000aa4890
+2	771	1748445915502969801	CMakeFiles/untitled1.dir/application.cpp.o	2614c9c4b39738ee
+1	855	1748445915582970121	CMakeFiles/untitled1.dir/main.cpp.o	5fb78e5cca10a3fb
+855	1147	1748445915874971291	untitled1	495eb8abd0d481dd
+2	631	1748446595264571755	CMakeFiles/untitled1.dir/application.cpp.o	2614c9c4b39738ee
+3	638	1748446595272572204	CMakeFiles/untitled1.dir/pipeline.cpp.o	8c1fdeca42955629
+1	1036	1748446595668594446	CMakeFiles/untitled1.dir/main.cpp.o	5fb78e5cca10a3fb
+2	1411	1748446596044615560	CMakeFiles/untitled1.dir/filter.cpp.o	2c62ab2f02fde519
+1	1254	1748446818439244350	CMakeFiles/untitled1.dir/filter.cpp.o	2c62ab2f02fde519
+1254	1493	1748446818675253929	untitled1	495eb8abd0d481dd

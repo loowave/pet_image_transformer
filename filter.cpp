@@ -214,12 +214,22 @@ Filter* CreateGaussianBlurFilter(const FilterDescriptor& fd) {
 }
 
 FilterCreatorsMap InitProducers() {
-    std::unordered_map<const char*, Ptr2FilterCreator> ret;
+    std::map<const char*, Ptr2FilterCreator, CompareStr> ret;
     ret.insert({"-crop", &CreateCropFilter});
     ret.insert({"-gs", &CreateGrayScaleFilter});
     ret.insert({"-neg", &CreateNegativeFilter});
     ret.insert({"-sharp", &CreateSharpeningFilter});
     ret.insert({"-edge", &CreateEdgeDetectionFilter});
     ret.insert({"-blur", &CreateGaussianBlurFilter});
+    return ret;
+}
+
+size_t KeyCount(const FilterCreatorsMap& map, const char* key) {
+    size_t ret = 0;
+    for (const std::pair<const char* const, Ptr2FilterCreator>& pair : map) {
+        if (std::strcmp(pair.first, key) == 0) {
+            ++ret;
+        }
+    }
     return ret;
 }

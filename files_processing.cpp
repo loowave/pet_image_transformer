@@ -1,6 +1,6 @@
 #include "files_processing.h"
 
-void ReadBMP(const Parcer& parced_args, TMatrix<RGB>& ret) {
+void ReadBMP(const Parser& parced_args, TMatrix<RGB>& ret) {
     FILE* f = std::fopen(parced_args.GetInputFile(), "rb");
     if (!f) {
         throw std::runtime_error("Unable to open the file");
@@ -33,7 +33,7 @@ void ReadBMP(const Parcer& parced_args, TMatrix<RGB>& ret) {
     delete[] tmp_buf;
 }
 
-void SaveBMP(const Parcer& parced_args, TMatrix<RGB>& image) {
+void SaveBMP(const Parser& parced_args, TMatrix<RGB>& image) {
     int colls = static_cast<int>(image.GetCollsNum());
     int rows = static_cast<int>(image.GetRowsNum());
     BMPHeader bh;  // заполним зааголовок файла, sizeof(BMPheader) = 54

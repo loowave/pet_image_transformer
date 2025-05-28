@@ -31,10 +31,10 @@ protected:
     std::vector<char*> params_;
 };
 
-// parcer аргументов входной строки
-class Parcer {
+// parser аргументов входной строки
+class Parser {
 public:
-    Parcer(int argc, char** argv) {
+    Parser(int argc, char** argv) {
         if (argc < 3) {
             throw std::invalid_argument("not enough parameters");
         }

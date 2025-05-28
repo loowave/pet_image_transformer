@@ -15,7 +15,7 @@ public:
     int Run();
 
 protected:
-    Parcer parced_args_;
+    Parser parced_args_;
     FilterCreatorsMap prod_map_;
     Pipeline pipeline_;
 };
